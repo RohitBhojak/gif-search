@@ -29,6 +29,12 @@ function init() {
     getGif(search.value);
   });
 
+  search.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") {
+      getGif(search.value);
+    }
+  });
+
   getGif("start");
 }
 
